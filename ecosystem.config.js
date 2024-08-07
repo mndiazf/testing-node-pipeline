@@ -1,11 +1,11 @@
 module.exports = {
-    apps: [{
-      name: 'gatos-app',
-      script: 'index.js',
-      watch: true,
-      env: {
-        NODE_ENV: 'production'
-      }
-    }]
-  };
-  
+  apps: [{
+    name: 'my-app',
+    script: './index.js',
+    watch: true,
+    ignore_watch: ['node_modules', 'logs'],
+    env: {
+      NODE_ENV: 'production'
+    }
+  }]
+};
